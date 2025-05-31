@@ -38,7 +38,7 @@ export default function Features() {
                 "Photo-based memory games using family pictures",
                 "Progressive challenges that adapt to user performance"
             ],
-            imageUrl: "/features/memory-games.jpg", // Replace with actual image
+            imageUrl: "/screenshots/games.png", // Using correct path to image
             alt: "Selection of memory games showing different difficulty levels"
         },
         {
@@ -51,7 +51,7 @@ export default function Features() {
                 "Shareable reports for healthcare providers",
                 "Personalized improvement recommendations"
             ],
-            imageUrl: "/features/progress-tracking.jpg", // Replace with actual image
+            imageUrl: "/screenshots/report.png", // Replace with actual image
             alt: "Progress tracking dashboard with charts and analytics"
         },
         {
@@ -64,7 +64,7 @@ export default function Features() {
                 "Local support group finder",
                 "Latest research updates on Alzheimer's treatments"
             ],
-            imageUrl: "/features/resources.jpg", // Replace with actual image
+            imageUrl: "/screenshots/articles.png", // Replace with actual image
             alt: "Supporting resources library showing articles and community forums"
         }
     ];
@@ -92,13 +92,21 @@ export default function Features() {
                         >
                             {/* Feature Image */}
                             <div className="w-full lg:w-1/2">
-                                <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-lg">
+                                <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden">
                                     {/* Replace with actual image */}
                                     <div className="w-full h-full flex items-center justify-center p-8">
                                         <span className="text-gray-500 dark:text-gray-400 text-center">
-                                            {feature.alt}
+                                            {/* {feature.alt}
                                             <br />
                                             (Replace with actual screenshot)
+                                             */}
+                                            <Image
+                                                src={feature.imageUrl}
+                                                alt={feature.alt}
+                                                width={350}
+                                                height={350}
+                                                className="object-cover"
+                                            />
                                         </span>
                                     </div>
                                 </div>
