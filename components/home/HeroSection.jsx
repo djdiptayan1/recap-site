@@ -36,12 +36,18 @@ export default function HeroSection() {
                         {/* Here you would place a screenshot of your app */}
                         <div className="h-full w-full relative rounded-lg overflow-hidden shadow-xl bg-white dark:bg-gray-900 p-2">
                             {/* Placeholder image - replace with your app screenshot */}
-                            <div className="w-full h-full flex items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-lg">
-                                <span className="text-gray-500 dark:text-gray-400 text-center p-4">
+                            <div className="w-full h-full flex items-center justify-center bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                {/* <span className="text-gray-500 dark:text-gray-400 text-center p-4">
                                     App Screenshot
                                     <br />
                                     (Upload your app screenshot here)
-                                </span>
+                                </span> */}
+                                <Image
+                                    src="recapLogo.svg"
+                                    alt="Recap App Screenshot"
+                                    layout="fill"
+                                    objectFit="contain"
+                                />
                             </div>
                         </div>
                     </div>
