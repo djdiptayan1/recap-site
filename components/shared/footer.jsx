@@ -3,13 +3,16 @@ import Image from 'next/image';
 
 export default function Footer() {
     return (
-        <footer className="bg-white dark:bg-gray-900 shadow-inner">
+        <footer className="bg-[#F4F6FF] dark:bg-gray-900 shadow-inner">
             <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     {/* Logo and description */}
                     <div className="col-span-1 md:col-span-1">
                         <div className="flex flex-col space-y-4">
-                            <h1 className="text-xl font-bold text-purple-700 dark:text-purple-400">Recap</h1>
+                            <div className="flex items-center">
+                                <Image src="/recapLogo.svg" alt="Recap Logo" width={30} height={30} className="mr-2" />
+                                <h1 className="text-xl font-bold text-[#0B8494] dark:text-[#0B8494]">Recap</h1>
+                            </div>
                             <p className="text-sm text-gray-600 dark:text-gray-400">
                                 Bridging the gap between family members and Alzheimer's patients with compassion, creativity, and curiosity.
                             </p>
@@ -23,17 +26,17 @@ export default function Footer() {
                         </h2>
                         <ul className="space-y-2">
                             <li>
-                                <Link href="/" className="text-sm text-gray-600 dark:text-gray-400 hover:text-purple-700 dark:hover:text-purple-400">
+                                <Link href="/" className="text-sm text-gray-600 dark:text-gray-400 hover:text-[#0B8494] dark:hover:text-[#0B8494]">
                                     Home
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/features" className="text-sm text-gray-600 dark:text-gray-400 hover:text-purple-700 dark:hover:text-purple-400">
+                                <Link href="/features" className="text-sm text-gray-600 dark:text-gray-400 hover:text-[#0B8494] dark:hover:text-[#0B8494]">
                                     Features
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/guidelines" className="text-sm text-gray-600 dark:text-gray-400 hover:text-purple-700 dark:hover:text-purple-400">
+                                <Link href="/guidelines" className="text-sm text-gray-600 dark:text-gray-400 hover:text-[#0B8494] dark:hover:text-[#0B8494]">
                                     App Guidelines
                                 </Link>
                             </li>
@@ -47,17 +50,17 @@ export default function Footer() {
                         </h2>
                         <ul className="space-y-2">
                             <li>
-                                <Link href="/support" className="text-sm text-gray-600 dark:text-gray-400 hover:text-purple-700 dark:hover:text-purple-400">
+                                <Link href="/support" className="text-sm text-gray-600 dark:text-gray-400 hover:text-[#0B8494] dark:hover:text-[#0B8494]">
                                     Help Center
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/privacyPolicy" className="text-sm text-gray-600 dark:text-gray-400 hover:text-purple-700 dark:hover:text-purple-400">
+                                <Link href="/privacyPolicy" className="text-sm text-gray-600 dark:text-gray-400 hover:text-[#0B8494] dark:hover:text-[#0B8494]">
                                     Privacy Policy
                                 </Link>
                             </li>
                             {/* <li>
-                                <a href="mailto:recapsdk@gmail.com" className="text-sm text-gray-600 dark:text-gray-400 hover:text-purple-700 dark:hover:text-purple-400">
+                                <a href="mailto:recapsdk@gmail.com" className="text-sm text-gray-600 dark:text-gray-400 hover:text-[#0B8494] dark:hover:text-[#0B8494]">
                                     Contact Us
                                 </a>
                             </li> */}
@@ -88,7 +91,7 @@ export default function Footer() {
                                         e.target.nextSibling.style.display = 'block';
                                     }}
                                 />
-                                <span className="hidden text-sm text-gray-600 dark:text-gray-400 hover:text-purple-700 dark:hover:text-purple-400">
+                                <span className="hidden text-sm text-gray-600 dark:text-gray-400 hover:text-[#0B8494] dark:hover:text-[#0B8494]">
                                     Download on the App Store
                                 </span>
                             </a>
