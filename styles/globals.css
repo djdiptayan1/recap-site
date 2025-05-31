@@ -1,21 +1,26 @@
 @import "tailwindcss";
 
 :root {
+  /* App Theme Colors based on AppColors struct */
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --foreground: #333333; /* Dark charcoal for better readability */
+  --primary-color: #0b8494; /* Teal-blue base */
+  --primary-light: rgba(11, 132, 148, 0.2); /* 20% opacity */
+  --primary-lighter: rgba(11, 132, 148, 0.1); /* 10% opacity */
+  --gradient-start: #b0e0e0; /* Light teal */
+  --gradient-end: #efb9cc; /* Soft rose-pink */
+  --card-bg: #f4f6ff; /* Card background */
+  --secondary-text: #666666; /* Medium gray for secondary text */
+  --error-color: #e66666; /* Error red */
+  --success-color: #66cc66; /* Success green */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary-color: #0b8494; /* Keep the same primary color */
+    --card-bg: #1a1a1a;
   }
 }
 

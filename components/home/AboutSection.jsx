@@ -2,45 +2,79 @@ import Image from 'next/image';
 
 export default function AboutSection() {
     return (
-        <section id="how-it-works" className="py-16 bg-white dark:bg-gray-900">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center">
-                    <h2 className="text-base font-semibold text-purple-600 dark:text-purple-400 tracking-wide uppercase">Why Recap Matters</h2>
-                    <p className="mt-2 text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
-                        Making a Meaningful Difference
-                    </p>
-                </div>
+        <section className="relative overflow-hidden py-24 lg:py-32 bg-gradient-to-br from-[#F0F9FF] via-white to-[#F4F6FF]">
+            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+                    <div className="space-y-8">
+                        <div className="space-y-4">
+                            <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight" style={{ color: 'var(--foreground)' }}>
+                                Why Recap
+                                <span style={{ color: 'var(--primary-color)' }}>
+                                    {" "}Matters
+                                </span>
+                            </h2>
+                            <div className="w-24 h-1 rounded-full" style={{ backgroundColor: 'var(--primary-color)' }}></div>
+                        </div>
 
-                <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <div className="order-2 md:order-1">
-                        <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                            Memory recall challenges in Alzheimer's can feel like an invisible barrier, quietly impacting daily life and accelerating cognitive decline.
-                        </p>
-                        <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                            But what if we could slow that progression while empowering patients and caregivers alike? We got you - Recap is here to do just that.
-                        </p>
-                        <p className="text-lg text-gray-600 dark:text-gray-300">
-                            By addressing memory recall proactively, Recap helps enhance the quality of life for millions worldwide, offering a lifeline of hope, connection, and engagement.
-                        </p>
-                        <div className="mt-10 flex justify-start">
-                            <a
-                                href="https://apps.apple.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md bg-purple-600 text-white hover:bg-purple-700 transition-colors"
-                            >
-                                Try It Now
-                            </a>
+                        {/* Subheading */}
+                        <h3 className="text-2xl lg:text-3xl font-semibold" style={{ color: 'var(--foreground)' }}>
+                            Making a Meaningful Difference
+                        </h3>
+
+                        {/* Description paragraphs with enhanced styling */}
+                        <div className="space-y-6 text-lg leading-relaxed" style={{ color: 'var(--secondary-text)' }}>
+                            <div className="relative pl-6 border-l-4" style={{ borderColor: 'var(--primary-light)' }}>
+                                <p>
+                                    Memory recall challenges in Alzheimer's can feel like an <strong style={{ color: 'var(--foreground)' }}>invisible barrier</strong>, quietly impacting daily life and accelerating cognitive decline.
+                                </p>
+                            </div>
+
+                            <div className="relative pl-6 border-l-4" style={{ borderColor: 'var(--primary-color)' }}>
+                                <p>
+                                    But what if we could slow that progression while empowering patients and caregivers alike? <strong style={{ color: 'var(--primary-color)' }}>We got you</strong> – Recap is here to do just that.
+                                </p>
+                            </div>
+
+                            <div className="relative pl-6 border-l-4" style={{ borderColor: 'var(--primary-light)' }}>
+                                <p>
+                                    By addressing memory recall proactively, Recap helps enhance the quality of life for <strong style={{ color: 'var(--foreground)' }}>millions worldwide</strong>, offering a lifeline of hope, connection, and engagement.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Enhanced CTA Button */}
+                        <div className="flex flex-col sm:flex-row gap-4">
+                            <button className="group relative px-8 py-4 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 overflow-hidden" style={{ backgroundColor: 'var(--primary-color)' }}>
+                                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: 'var(--primary-color)', filter: 'brightness(0.9)' }}></div>
+                                <span className="relative flex items-center justify-center">
+                                    Try It Now
+                                    <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                    </svg>
+                                </span>
+                            </button>
                         </div>
                     </div>
-                    <div className="order-1 md:order-2 rounded-xl overflow-hidden shadow-lg">
-                        {/* Placeholder for image - replace with your image */}
-                        <div className="w-full h-80 bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
-                            <span className="text-gray-500 dark:text-gray-400">
-                                Image showing a person using the app
-                                <br />
-                                (Replace with your image)
-                            </span>
+
+                    {/* Visual Side */}
+                    <div className="relative">
+                        {/* Main image container with enhanced styling */}
+                        <div className="relative group">
+                            {/* Decorative background */}
+                            <div className="absolute inset-0 rounded-3xl transform rotate-3 group-hover:rotate-6 transition-transform duration-500" style={{ backgroundColor: 'var(--primary-color)' }}></div>
+                            <div className="absolute inset-0 rounded-3xl transform -rotate-3 group-hover:-rotate-6 transition-transform duration-500" style={{ background: 'linear-gradient(135deg, var(--gradient-start), var(--gradient-end))' }}></div>
+
+                            {/* Image container */}
+                            <div className="relative p-2 rounded-3xl shadow-2xl" style={{ backgroundColor: 'var(--card-bg)' }}>
+                                <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+                                    <Image
+                                        src="/screenshots/patientHome.png"
+                                        alt="Recap app interface showing memory assistance features"
+                                        fill
+                                        className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                    />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
