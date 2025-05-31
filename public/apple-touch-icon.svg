@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="180px" viewBox="0 0 180 180" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Apple Touch Icon</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#8B5CF6" x="0" y="0" width="180" height="180" rx="45"></rect>
+        <path d="M54,126 C49.0294,126 45,121.971 45,117 L45,63 C45,58.0294 49.0294,54 54,54 L126,54 C130.971,54 135,58.0294 135,63 L135,72 L108,72 C98.0589,72 90,80.0589 90,90 C90,99.9411 98.0589,108 108,108 L135,108 L135,117 C135,121.971 130.971,126 126,126 L54,126 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
+        <path d="M108,99 C103.029,99 99,94.9706 99,90 C99,85.0294 103.029,81 108,81 L144,81 L144,99 L108,99 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
+    </g>
+</svg>
