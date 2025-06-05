@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
-
+import { config } from "../../config"
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -39,7 +39,7 @@ export default function Navbar() {
                             Privacy Policy
                         </Link>
                         <a
-                            href="https://apps.apple.com/"
+                            href={config.appLink}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="ml-8 bg-[#0B8494] hover:bg-[#097383] text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
