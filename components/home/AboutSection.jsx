@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { config } from "../../config"
 
 export default function AboutSection() {
     return (
@@ -42,9 +43,8 @@ export default function AboutSection() {
                             </div>
                         </div>
 
-                        {/* Enhanced CTA Button */}
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <button className="group relative px-8 py-4 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 overflow-hidden" style={{ backgroundColor: 'var(--primary-color)' }}>
+                            <a href={config.appLink} className="group relative px-8 py-4 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 overflow-hidden" style={{ backgroundColor: 'var(--primary-color)' }}>
                                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: 'var(--primary-color)', filter: 'brightness(0.9)' }}></div>
                                 <span className="relative flex items-center justify-center">
                                     Try It Now
@@ -52,7 +52,7 @@ export default function AboutSection() {
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                                     </svg>
                                 </span>
-                            </button>
+                            </a>
                         </div>
                     </div>
 

@@ -11,7 +11,7 @@ export default function Document() {
         <meta property="og:title" content="Recap - Memory Care App" />
         <meta property="og:description" content="Bridging the gap between family members and Alzheimer's patients with compassion and care" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.recapapp.com" />
+        <meta property="og:url" content="https://www.recap.djdiptayan.in" />
         <meta property="og:image" content="https://www.recapapp.com/og-image.jpg" />
       </Head>
       <body className="antialiased">

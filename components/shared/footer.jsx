@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { config } from "../../config"
 
 export default function Footer() {
     return (
@@ -74,7 +75,7 @@ export default function Footer() {
                         </h2>
                         <div className="flex flex-col space-y-4">
                             <a
-                                href="https://apps.apple.com/"
+                                href={config.appLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-36"

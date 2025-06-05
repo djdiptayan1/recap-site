@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { config } from "../../config"
 
 export default function CTASection() {
     return (
@@ -15,7 +16,7 @@ export default function CTASection() {
                         </p>
                         <div className="mt-8 flex flex-col sm:flex-row gap-4">
                             <a
-                                href="https://apps.apple.com/"
+                                href={config.appLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md bg-white text-[#0B8494] hover:bg-gray-100 transition-colors"

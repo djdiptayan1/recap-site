@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { config } from "../../config"
 
 const features = [
     {
@@ -206,7 +207,7 @@ export default function Features() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
-                            href="https://apps.apple.com/"
+                            href={config.appLink}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group inline-flex items-center justify-center px-8 py-4 bg-[#0B8494] text-white font-semibold rounded-xl shadow-lg hover:bg-[#097383] hover:shadow-xl transition-all duration-300 transform hover:scale-105"

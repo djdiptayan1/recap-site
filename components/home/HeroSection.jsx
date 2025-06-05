@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { config } from "../../config"
 
 export default function HeroSection() {
     return (
@@ -45,7 +46,7 @@ export default function HeroSection() {
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4 md:gap-6 pt-4 justify-center lg:justify-start">
                             <a
-                                href="https://apps.apple.com/"
+                                href={config.appLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 border border-transparent text-base md:text-lg font-semibold rounded-xl bg-[#0B8494] text-white hover:bg-[#097383] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
