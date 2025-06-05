@@ -12,7 +12,7 @@ export default function Document() {
         <meta property="og:description" content="Bridging the gap between family members and Alzheimer's patients with compassion and care" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.recap.djdiptayan.in" />
-        <meta property="og:image" content="https://www.recapapp.com/og-image.jpg" />
+        <meta property="og:image" content="https://recap.djdiptayan.in/screenshots/landing.png" />
       </Head>
       <body className="antialiased">
         <Main />
