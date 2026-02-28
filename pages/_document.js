@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <meta name="theme-color" content="#8B5CF6" />
+        <meta name="theme-color" content="#0B8494" />
         <meta name="description" content="Recap - An innovative memory care app designed for Alzheimer's patients and their caregivers" />
         <meta property="og:title" content="Recap - Memory Care App" />
         <meta property="og:description" content="Bridging the gap between family members and Alzheimer's patients with compassion and care" />

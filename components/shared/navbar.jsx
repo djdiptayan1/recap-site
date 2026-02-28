@@ -1,10 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { config } from "../../config"
+import { ThemeContext } from "../../pages/_app";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const { darkMode, toggleDarkMode } = useContext(ThemeContext);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -38,6 +40,21 @@ export default function Navbar() {
                         <Link href="/privacyPolicy" className="text-gray-600 dark:text-gray-300 hover:text-[#0B8494] px-3 py-2 text-sm font-medium transition-colors">
                             Privacy Policy
                         </Link>
+                        <button
+                            onClick={toggleDarkMode}
+                            className="p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                            aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
+                        >
+                            {darkMode ? (
+                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                                </svg>
+                            ) : (
+                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                                </svg>
+                            )}
+                        </button>
                         <a
                             href={config.appLink}
                             target="_blank"
@@ -89,6 +106,27 @@ export default function Navbar() {
                         <Link href="/privacyPolicy" className="block text-gray-600 dark:text-gray-300 hover:text-[#0B8494] px-3 py-2 text-base font-medium" onClick={() => setIsMenuOpen(false)}>
                             Privacy Policy
                         </Link>
+                        <button
+                            onClick={toggleDarkMode}
+                            className="flex items-center w-full text-gray-600 dark:text-gray-300 hover:text-[#0B8494] px-3 py-2 text-base font-medium"
+                            aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
+                        >
+                            {darkMode ? (
+                                <>
+                                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    </svg>
+                                    Light Mode
+                                </>
+                            ) : (
+                                <>
+                                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                                    </svg>
+                                    Dark Mode
+                                </>
+                            )}
+                        </button>
                         <a
                             href={config.appLink}
                             target="_blank"
