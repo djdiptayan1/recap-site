@@ -41,6 +41,11 @@ export default function Footer() {
                                     App Guidelines
                                 </Link>
                             </li>
+                            <li>
+                                <Link href="/screenshots" className="text-sm text-gray-600 dark:text-gray-400 hover:text-[#0B8494] dark:hover:text-[#0B8494]">
+                                    Screenshots
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 
