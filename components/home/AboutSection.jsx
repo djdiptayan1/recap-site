@@ -47,11 +47,11 @@ export default function AboutSection() {
                         <ul className="space-y-4">
                             {[
                                 "Targets all three memory types: long-term (distant), short-term (immediate), and recent (remote) memory",
-                                "Smriti AI Care Companion — powered by Google Gemini — provides reminiscence therapy and context-aware support",
-                                "Journal & Memory entries with photos, voice recordings, and mood tagging for emotional expression",
-                                "Smart reminders for medicine, appointments, daily chores, exercise, and hydration",
+                                "Smriti AI Care Companion provides reminiscence therapy and personalized support",
+                                "Journal & Memory entries with photos, voice recordings, and mood tagging",
+                                "Smart reminders for medication, appointments, and daily routines",
                                 "Enables family members to remotely create daily memory questions with photos",
-                                "Dashboard analytics with daily, weekly, and monthly insights plus cognitive decline alerts",
+                                "Dashboard analytics to track cognitive performance over time",
                                 "Encourages daily engagement through streaks, cognitive games, and structured routines",
                             ].map((point, i) => (
                                 <li key={i} className="flex items-start">

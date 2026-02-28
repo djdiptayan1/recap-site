@@ -9,8 +9,8 @@ export default function Guidelines() {
                 "Download Recap from the App Store",
                 "Sign in with your Google account for secure authentication",
                 "Select your role: Patient or Family Member",
-                "Patients: Enter your profile details including name, date of birth, sex, blood group, and Alzheimer\u2019s stage (Early, Middle, or Advanced)",
-                "Family Members: Connect to a patient account using their unique 6-character Patient UID"
+                "Patients: Enter your profile details including name, date of birth, and Alzheimer\u2019s stage",
+                "Family Members: Connect to a patient account using their unique Patient ID"
             ],
             image: "https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048140/ufke6lkpp4oxsnjswwr8.png",
             alt: "Recap app role selection screen"
@@ -19,11 +19,11 @@ export default function Guidelines() {
             title: "Daily Questions",
             description: "Engage with personalized memory prompts daily",
             steps: [
-                "Patients: Open the Questions card on the home screen to view today\u2019s 7 questions (4 immediate, 2 recent, 1 remote)",
-                "Answer each question \u2014 responses are tracked across memory types with accuracy scores",
-                "Family Members: Use the Add Question feature to create new questions remotely with photos and hints",
-                "Set ask intervals and time frames to control when questions appear",
-                "Patient answers automatically update daily activity streaks"
+                "Patients: Open the Questions card on the home screen to view today\u2019s questions",
+                "Answer each question \u2014 responses are tracked across memory types",
+                "Family Members: Use the Add Question feature to create new questions remotely with photos",
+                "Questions cover different memory types for comprehensive cognitive exercise",
+                "Answering questions automatically updates your daily activity streak"
             ],
             image: "https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048144/ifcqlc4g1lrbc0kpimbq.png",
             alt: "Daily questions interface"
@@ -35,9 +35,8 @@ export default function Guidelines() {
                 "Open Smriti from the home screen to start a conversation",
                 "Ask questions about memory care, daily activities, or just chat for companionship",
                 "Use \u2018Memory Lane\u2019 mode for guided reminiscence therapy sessions",
-                "Smriti understands your name, family members, stage, and recent activities for personalized responses",
-                "Receive care strategies, follow-up prompts, and supportive notes in every conversation",
-                "Conversation history is maintained for continuity across sessions"
+                "Smriti provides personalized responses based on your context",
+                "Receive care strategies, follow-up prompts, and supportive notes"
             ],
             image: "https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048146/jl1oweylvh6wr0yo13bs.png",
             alt: "Smriti AI Care Companion chat screen"
@@ -47,11 +46,10 @@ export default function Guidelines() {
             description: "Capture thoughts, memories, and emotions",
             steps: [
                 "Create a new journal entry from the home screen",
-                "Write text content or record voice entries with audio upload support",
-                "Attach multiple photos with captions to each entry",
-                "Tag your mood (happy, sad, neutral, anxious, calm, grateful) to track emotional well-being",
-                "Tag people, places, and events for rich context and easier recall later",
-                "Browse past entries with pagination to revisit your personal memory archive"
+                "Write text, record voice entries, or attach photos",
+                "Tag your mood to track emotional well-being over time",
+                "Tag people, places, and events for meaningful context",
+                "Browse past entries to revisit your personal memory archive"
             ],
             image: "https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048148/sid4k7p89esbm7vwncab.png",
             alt: "Journal and memory entries screen"
@@ -60,11 +58,11 @@ export default function Guidelines() {
             title: "Smart Reminders",
             description: "Never miss medication, appointments, or daily routines",
             steps: [
-                "Add reminders for Medicine, Daily Chores, Appointments, Exercise, Meals, Hydration, or Other",
-                "Set flexible frequencies: once, hourly, daily, weekdays, weekends, weekly, biweekly, monthly, or yearly",
-                "Add optional notes for additional context (e.g., \u2018Take with breakfast\u2019)",
+                "Add reminders for medication, appointments, exercise, meals, and more",
+                "Set flexible scheduling to match your daily routine",
+                "Add optional notes for additional context",
                 "Edit or delete reminders as routines change",
-                "Family members can coordinate medication and routine reminders remotely"
+                "Family members can help coordinate care reminders remotely"
             ],
             image: "https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048141/l0u2uo3moubir9dcqlma.png",
             alt: "Smart reminders setup screen"
@@ -73,11 +71,10 @@ export default function Guidelines() {
             title: "Memory Games",
             description: "Exercise your brain with cognitive games",
             steps: [
-                "Choose from available games: Geo Sorter, Match Mania, or Card Game",
-                "Geo Sorter: Sort geographic items to boost spatial memory and recognition",
-                "Match Mania: Find matching pairs to increase memory agility and pattern recognition",
-                "Card Game: Visual recognition-based card matching for cognitive training",
-                "Play for 15-20 minutes daily for optimal cognitive benefit"
+                "Choose from multiple games targeting different cognitive skills",
+                "Games exercise spatial memory, pattern recognition, and visual recall",
+                "Play for 15-20 minutes daily for optimal cognitive benefit",
+                "Performance is tracked to monitor improvement over time"
             ],
             image: "https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048144/uv8wmtmbgdp2qe1ag7yi.png",
             alt: "Memory games selection screen"
@@ -86,11 +83,10 @@ export default function Guidelines() {
             title: "Progress & Analytics",
             description: "Monitor memory performance and cognitive trends",
             steps: [
-                "View dashboard analytics with daily, weekly, and monthly question accuracy",
-                "Check per-category breakdowns for immediate, recent, and remote memory",
-                "Take the 15-point Memory Assessment quiz to get a comprehensive cognitive score",
-                "Review historical memory quiz reports to track changes over time",
-                "Watch for cognitive decline trend alerts that flag concerning patterns",
+                "View analytics showing performance trends over time",
+                "Check breakdowns across different memory categories",
+                "Take cognitive assessments to get a comprehensive score",
+                "Review historical reports to track changes",
                 "Share reports with healthcare providers to support clinical assessments"
             ],
             image: "https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048142/nmexrxae9dg4k8ccrlb6.png",
@@ -101,10 +97,9 @@ export default function Guidelines() {
             description: "Build a daily habit for maximum cognitive benefit",
             steps: [
                 "Complete at least one activity daily to maintain your streak",
-                "View your streak calendar on the home screen \u2014 shows current streak, max streak, and active days",
-                "Check monthly and yearly streak data for long-term engagement visualization",
+                "View your streak calendar on the home screen to track active days",
                 "Research shows consistent daily cognitive engagement provides the most benefit",
-                "Family members can monitor streak data from their dashboard"
+                "Family members can monitor engagement from their dashboard"
             ],
             image: "https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048146/v9dxlusltvxy4rjnuuoo.png",
             alt: "Streaks tracking on patient home screen"

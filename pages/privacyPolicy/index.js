@@ -113,14 +113,14 @@ export default function PrivacyPolicy() {
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">2. User Content</h3>
                     <ul className="list-disc pl-6 text-gray-600 dark:text-gray-300 mb-4">
                         <li className="mb-2">Photos: Optional photos you upload to associate with memories, questions, and journal entries</li>
-                        <li className="mb-2">Voice Recordings: Optional audio recordings in journal entries, stored via Cloudinary</li>
+                        <li className="mb-2">Voice Recordings: Optional audio recordings in journal entries</li>
                         <li className="mb-2">User-Generated Content: Responses to memory prompts, journal entries, custom questions, and notes</li>
                     </ul>
 
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">3. AI Interaction Data</h3>
                     <ul className="list-disc pl-6 text-gray-600 dark:text-gray-300 mb-4">
-                        <li className="mb-2">Smriti AI Conversations: Queries and conversation history sent to Google Gemini for AI-powered responses</li>
-                        <li className="mb-2">Patient Context: Name, family members, stage, activities, and reminders shared with the AI for personalized support</li>
+                        <li className="mb-2">Smriti AI Conversations: Queries and conversation history used to provide AI-powered responses</li>
+                        <li className="mb-2">Patient Context: Relevant profile information shared with the AI to enable personalized support</li>
                         <li className="mb-2">Note: Conversation data is processed in real-time and not stored by the AI provider for training purposes</li>
                     </ul>
 
@@ -183,9 +183,9 @@ export default function PrivacyPolicy() {
                         We use the following third-party SDKs:
                     </p>
                     <ul className="list-disc pl-6 text-gray-600 dark:text-gray-300 mb-4">
-                        <li className="mb-2">Google Gemini AI: Powers the Smriti AI Care Companion for conversational support and reminiscence therapy</li>
-                        <li className="mb-2">Firebase: Authentication, database, and secure data storage</li>
-                        <li className="mb-2">Cloudinary: Secure image and audio storage for profile photos, journal entries, and memory content</li>
+                        <li className="mb-2">AI Services: Powers the Smriti AI Care Companion for conversational support and reminiscence therapy</li>
+                        <li className="mb-2">Authentication & Storage: Secure authentication, database, and data storage services</li>
+                        <li className="mb-2">Media Storage: Secure image and audio storage for profile photos, journal entries, and memory content</li>
                         <li className="mb-2">Analytics: To monitor app performance and user experience</li>
                         <li className="mb-2">Crash Reporting: To identify and fix technical issues</li>
                     </ul>

@@ -49,7 +49,7 @@ export default function HeroSection() {
                             </div>
                             <div className="text-center lg:text-left">
                                 <div className="text-xl md:text-2xl font-bold text-[#0B8494]">Smriti AI</div>
-                                <div className="text-xs md:text-sm text-gray-500 dark:text-gray-400">Gemini-Powered Care Companion</div>
+                                <div className="text-xs md:text-sm text-gray-500 dark:text-gray-400">AI-Powered Care Companion</div>
                             </div>
                             <div className="text-center lg:text-left">
                                 <div className="text-xl md:text-2xl font-bold text-[#0B8494]">3 Stages</div>
