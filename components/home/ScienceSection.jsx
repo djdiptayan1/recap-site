@@ -6,7 +6,7 @@ export default function ScienceSection() {
             color: "#0B8494",
             description: "Memories from years ago — childhood events, life milestones, and deeply encoded experiences.",
             science: "Long-term memory relies on the hippocampus for encoding and the neocortex for storage. In Alzheimer's, hippocampal damage occurs early, but distant memories encoded long ago may persist longer.",
-            appApproach: "Recap uses personalized daily questions about past life events, family photos, and familiar experiences to reinforce long-term recall pathways.",
+            appApproach: "Recap uses personalized daily questions about past life events, family photos, and the Smriti AI companion\u2019s memory-lane reminiscence mode to reinforce long-term recall pathways.",
         },
         {
             type: "Short-term Memory",
@@ -14,7 +14,7 @@ export default function ScienceSection() {
             color: "#E07A5F",
             description: "Very recent memories — what happened minutes or hours ago, such as a conversation or a meal.",
             science: "Short-term memory has limited capacity (typically 7±2 items) and duration. Alzheimer's often impairs this first, making it hard to remember recent events or instructions.",
-            appApproach: "Memory games like Match Mania and Geo Sorter exercise short-term recall and working memory through pattern matching and spatial recognition tasks.",
+            appApproach: "Memory games like Match Mania, Geo Sorter, and Card Game exercise short-term recall through pattern matching and spatial recognition. Journal entries with voice recordings also reinforce immediate memory encoding.",
         },
         {
             type: "Recent Memory",
@@ -22,7 +22,7 @@ export default function ScienceSection() {
             color: "#81B29A",
             description: "Memories from days to weeks ago — what someone did last weekend or a recent doctor visit.",
             science: "Recent memory requires consolidation from short-term to long-term storage, a process that sleep and repetition facilitate. This consolidation is disrupted in Alzheimer's.",
-            appApproach: "Daily questions and streak-based engagement encourage repeated recall of recent events, supporting the consolidation process through structured repetition.",
+            appApproach: "Daily questions, streak-based engagement, and journal/memory entries encourage repeated recall of recent events. Smart reminders for medicine and routines provide structured daily anchors that support consolidation.",
         },
     ];
 

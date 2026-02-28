@@ -10,33 +10,48 @@ export default function Support() {
     const faqs = [
         {
             id: 1,
-            question: "How do I connect with family members on Recap?",
-            answer: "Family members connect using the patient's unique Patient UID. When a family member signs up, they enter the patient's UID to link their accounts. This allows them to create daily questions, view progress reports, and monitor engagement."
+            question: "What is Smriti AI and how does it help?",
+            answer: "Smriti is Recap\u2019s AI Care Companion powered by Google Gemini. It provides real-time conversational support, reminiscence therapy through a \u2018Memory Lane\u2019 mode, and context-aware responses that reference the patient\u2019s name, family members, Alzheimer\u2019s stage, recent activities, and reminders. It returns care strategies, follow-up prompts, and supportive notes."
         },
         {
             id: 2,
-            question: "What are the three memory types that Recap tests?",
-            answer: "Recap assesses Distant (long-term) memory — memories from years ago; Immediate (short-term) memory — things that happened minutes or hours ago; and Remote (recent) memory — events from days to weeks ago. Each type is tracked separately in progress reports."
+            question: "How do I connect with family members on Recap?",
+            answer: "Family members connect using the patient\u2019s unique 6-character Patient UID. When a family member signs up, they enter the patient\u2019s UID to link their accounts. This allows them to create daily questions, view dashboard analytics, monitor streaks, coordinate reminders, and upload photos and stories."
         },
         {
             id: 3,
-            question: "How often should the memory games be played?",
-            answer: "For optimal benefit, we recommend 15-20 minutes of daily engagement, which can include both memory games and daily questions. Research shows that consistent daily cognitive exercise provides more benefit than longer, infrequent sessions."
+            question: "What are the three memory types that Recap assesses?",
+            answer: "Recap assesses Immediate memory (short-term) \u2014 things that happened minutes or hours ago; Recent memory \u2014 events from days to weeks ago; and Remote memory (long-term) \u2014 memories from years ago. The app provides 4 immediate, 2 recent, and 1 remote question per day, and the 15-point Memory Assessment quiz covers all three types."
         },
         {
             id: 4,
             question: "What games are available in Recap?",
-            answer: "Recap currently offers two games: Geo Sorter, which exercises spatial memory through geographic sorting tasks, and Match Mania, a pattern-matching game designed to increase memory agility and short-term recall."
+            answer: "Recap offers three cognitive games: Geo Sorter (spatial memory through geographic sorting), Match Mania (pattern matching for memory agility), and Card Game (visual recognition-based card matching). All games track performance for progress reports."
         },
         {
             id: 5,
-            question: "Can healthcare providers access the progress reports?",
-            answer: "Yes. The app generates three types of reports — Immediate, Recent, and Remote memory reports — that can be shared with healthcare providers. These reports include trend data and performance analytics that can inform clinical assessments."
+            question: "How does the Journal & Memories feature work?",
+            answer: "The Journal feature lets patients create entries with text, voice recordings (audio uploaded to Cloudinary), and multiple photos with captions. You can tag your mood (happy, sad, neutral, anxious, calm, grateful), tag people, places, and events, and choose between \u2018journal\u2019 (text/voice) or \u2018memory\u2019 (photo-focused) entry types. Browse past entries with pagination."
         },
         {
             id: 6,
-            question: "How does Recap adapt to different Alzheimer's stages?",
-            answer: "During setup, patients or caregivers select the current Alzheimer's stage: Early, Middle, or Advanced. The app uses this information to tailor the difficulty and nature of questions and activities to be appropriate for the patient's cognitive level."
+            question: "What types of reminders can I set?",
+            answer: "Recap supports reminders for Medicine, Daily Chores, Appointments, Exercise, Meals, Hydration, and Other. Each reminder can be set with flexible frequencies: once, hourly, daily, weekdays, weekends, weekly, biweekly, monthly, or yearly. You can add optional notes for context."
+        },
+        {
+            id: 7,
+            question: "How does the Dashboard Analytics work?",
+            answer: "The Dashboard provides daily, weekly, and monthly question accuracy statistics with per-category breakdowns (immediate, recent, remote). It includes cognitive decline trend alerts that flag concerning patterns. Analytics are cached for fast loading with a configurable refresh interval."
+        },
+        {
+            id: 8,
+            question: "Can healthcare providers access the progress reports?",
+            answer: "Yes. The Memory Assessment quiz generates a 15-point score with historical reports that can be shared with healthcare providers. Dashboard analytics with daily/weekly/monthly trends and cognitive decline alerts help inform clinical assessments and treatment decisions."
+        },
+        {
+            id: 9,
+            question: "How does Recap adapt to different Alzheimer\u2019s stages?",
+            answer: "During setup, patients or caregivers select the current Alzheimer\u2019s stage: Early, Middle, or Advanced. Smriti AI uses this context to tailor its responses. The combination of questions, games, journal, reminders, and Smriti supports patients across all stages with appropriate engagement."
         }
     ];
 

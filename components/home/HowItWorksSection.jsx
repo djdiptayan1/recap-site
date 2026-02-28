@@ -4,20 +4,20 @@ const steps = [
     {
         step: "1",
         title: "Choose Your Role",
-        description: "Sign up as a Patient or Family Member. Patients get daily questions and games; family members get monitoring tools and question creation.",
-        image: "/screenshots/landing.png",
+        description: "Sign up as a Patient or Family Member. Patients get daily questions, games, journal, reminders, and the Smriti AI companion. Family members get monitoring tools, question creation, and shared dashboards.",
+        image: "https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048140/ufke6lkpp4oxsnjswwr8.png",
     },
     {
         step: "2",
         title: "Engage Daily",
-        description: "Answer personalized memory questions, play cognitive games like Geo Sorter and Match Mania, and build your daily streak for consistent brain exercise.",
-        image: "/screenshots/games.png",
+        description: "Answer personalized memory questions, play cognitive games, write journal entries with photos and voice recordings, chat with Smriti AI, and build your daily streak for consistent brain exercise.",
+        image: "https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048148/r9h7ej4mm8gt3bedt2dq.png",
     },
     {
         step: "3",
         title: "Track Progress",
-        description: "View detailed reports broken down by memory type — immediate, recent, and distant. Share results with healthcare providers to inform treatment decisions.",
-        image: "/screenshots/report.png",
+        description: "View dashboard analytics with daily, weekly, and monthly breakdowns by memory type. Share cognitive assessment reports with healthcare providers. Get decline trend alerts.",
+        image: "https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048142/nmexrxae9dg4k8ccrlb6.png",
     },
 ];
 

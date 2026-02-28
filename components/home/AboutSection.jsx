@@ -47,10 +47,12 @@ export default function AboutSection() {
                         <ul className="space-y-4">
                             {[
                                 "Targets all three memory types: long-term (distant), short-term (immediate), and recent (remote) memory",
-                                "Adapts to Alzheimer's stages — Early, Middle, and Advanced — for personalized engagement",
+                                "Smriti AI Care Companion — powered by Google Gemini — provides reminiscence therapy and context-aware support",
+                                "Journal & Memory entries with photos, voice recordings, and mood tagging for emotional expression",
+                                "Smart reminders for medicine, appointments, daily chores, exercise, and hydration",
                                 "Enables family members to remotely create daily memory questions with photos",
-                                "Tracks cognitive performance through detailed reports and trend analytics",
-                                "Encourages daily engagement through a streak system and cognitive games",
+                                "Dashboard analytics with daily, weekly, and monthly insights plus cognitive decline alerts",
+                                "Encourages daily engagement through streaks, cognitive games, and structured routines",
                             ].map((point, i) => (
                                 <li key={i} className="flex items-start">
                                     <svg className="w-5 h-5 text-[#0B8494] mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

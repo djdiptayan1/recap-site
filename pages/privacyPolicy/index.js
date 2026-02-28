@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
                 </p>
             </div>
 
-            <div className="prose prose-purple dark:prose-invert max-w-none">
+            <div className="prose dark:prose-invert max-w-none">
                 <section className="mb-10">
                     <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Introduction</h2>
                     <p className="text-gray-600 dark:text-gray-300 mb-4">
@@ -31,7 +31,7 @@ export default function PrivacyPolicy() {
                     <div className="overflow-x-auto mb-6">
                         <table className="min-w-full border border-gray-300 dark:border-gray-700">
                             <thead>
-                                <tr className="bg-purple-50 dark:bg-purple-900/30">
+                                <tr className="bg-[#0B8494]/10 dark:bg-[#0B8494]/20">
                                     <th className="py-2 px-4 border-b border-gray-300 dark:border-gray-700 text-left">Data Type</th>
                                     <th className="py-2 px-4 border-b border-gray-300 dark:border-gray-700 text-left">Purpose of Use</th>
                                     <th className="py-2 px-4 border-b border-gray-300 dark:border-gray-700 text-left">Linked to Identity?</th>
@@ -78,6 +78,9 @@ export default function PrivacyPolicy() {
                         <li className="mb-2">Input data related to memory exercises and activities</li>
                         <li className="mb-2">Communicate with family members through the app</li>
                         <li className="mb-2">Track progress and memory improvements</li>
+                        <li className="mb-2">Create journal entries with text, photos, and voice recordings</li>
+                        <li className="mb-2">Interact with the Smriti AI Care Companion</li>
+                        <li className="mb-2">Set reminders for medication, appointments, and daily routines</li>
                         <li className="mb-2">Contact our support team</li>
                     </ul>
                 </section>
@@ -109,17 +112,25 @@ export default function PrivacyPolicy() {
 
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">2. User Content</h3>
                     <ul className="list-disc pl-6 text-gray-600 dark:text-gray-300 mb-4">
-                        <li className="mb-2">Photos: Optional photos you upload to associate with memories and questions</li>
-                        <li className="mb-2">User-Generated Content: Responses to memory prompts, custom questions, and notes</li>
+                        <li className="mb-2">Photos: Optional photos you upload to associate with memories, questions, and journal entries</li>
+                        <li className="mb-2">Voice Recordings: Optional audio recordings in journal entries, stored via Cloudinary</li>
+                        <li className="mb-2">User-Generated Content: Responses to memory prompts, journal entries, custom questions, and notes</li>
                     </ul>
 
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">3. Usage Data</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">3. AI Interaction Data</h3>
+                    <ul className="list-disc pl-6 text-gray-600 dark:text-gray-300 mb-4">
+                        <li className="mb-2">Smriti AI Conversations: Queries and conversation history sent to Google Gemini for AI-powered responses</li>
+                        <li className="mb-2">Patient Context: Name, family members, stage, activities, and reminders shared with the AI for personalized support</li>
+                        <li className="mb-2">Note: Conversation data is processed in real-time and not stored by the AI provider for training purposes</li>
+                    </ul>
+
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">4. Usage Data</h3>
                     <ul className="list-disc pl-6 text-gray-600 dark:text-gray-300 mb-4">
                         <li className="mb-2">Product Interaction: How you engage with features, time spent on different activities</li>
                         <li className="mb-2">Performance Data: Used to improve app functionality and user experience</li>
                     </ul>
 
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">4. Health-Related Information</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">5. Health-Related Information</h3>
                     <ul className="list-disc pl-6 text-gray-600 dark:text-gray-300 mb-4">
                         <li className="mb-2">Memory Activity Metrics: Aggregated data about memory performance and cognitive exercises</li>
                         <li className="mb-2">Progress Tracking: Historical data showing changes in memory recall performance</li>
@@ -172,9 +183,11 @@ export default function PrivacyPolicy() {
                         We use the following third-party SDKs:
                     </p>
                     <ul className="list-disc pl-6 text-gray-600 dark:text-gray-300 mb-4">
+                        <li className="mb-2">Google Gemini AI: Powers the Smriti AI Care Companion for conversational support and reminiscence therapy</li>
+                        <li className="mb-2">Firebase: Authentication, database, and secure data storage</li>
+                        <li className="mb-2">Cloudinary: Secure image and audio storage for profile photos, journal entries, and memory content</li>
                         <li className="mb-2">Analytics: To monitor app performance and user experience</li>
                         <li className="mb-2">Crash Reporting: To identify and fix technical issues</li>
-                        <li className="mb-2">Cloud Storage: To securely store and sync your data</li>
                     </ul>
                     <p className="text-gray-600 dark:text-gray-300 mb-4">
                         All third-party services we use adhere to strict privacy and security standards.

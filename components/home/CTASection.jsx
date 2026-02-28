@@ -32,22 +32,22 @@ export default function CTASection() {
 
                 <div className="flex justify-center gap-6">
                     <Image
-                        src="/screenshots/landing.png"
+                        src="https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048140/ufke6lkpp4oxsnjswwr8.png"
                         alt="Recap App - Role Selection"
                         width={180}
                         height={320}
                         className="rounded-xl shadow-lg object-cover"
                     />
                     <Image
-                        src="/screenshots/games.png"
-                        alt="Recap App - Memory Games"
+                        src="https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048146/jl1oweylvh6wr0yo13bs.png"
+                        alt="Recap App - Smriti AI Companion"
                         width={180}
                         height={320}
                         className="rounded-xl shadow-lg object-cover hidden sm:block"
                     />
                     <Image
-                        src="/screenshots/report.png"
-                        alt="Recap App - Progress Reports"
+                        src="https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048142/nmexrxae9dg4k8ccrlb6.png"
+                        alt="Recap App - Caregiver Dashboard"
                         width={180}
                         height={320}
                         className="rounded-xl shadow-lg object-cover hidden md:block"

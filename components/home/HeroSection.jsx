@@ -21,7 +21,7 @@ export default function HeroSection() {
                         </h1>
 
                         <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-xl mx-auto lg:mx-0">
-                            Recap is a scientifically-informed iOS app that helps Alzheimer&apos;s patients exercise three core memory types — <strong>long-term</strong>, <strong>short-term</strong>, and <strong>recent</strong> — through daily questions, cognitive games, and family-driven engagement.
+                            Recap is a holistic memory-care ecosystem combining <strong>AI companionship</strong>, <strong>daily cognitive exercises</strong>, <strong>journaling</strong>, and <strong>family collaboration</strong> — empowering Alzheimer&apos;s patients and caregivers through science-backed engagement.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
@@ -48,8 +48,8 @@ export default function HeroSection() {
                                 <div className="text-xs md:text-sm text-gray-500 dark:text-gray-400">People with Dementia Worldwide</div>
                             </div>
                             <div className="text-center lg:text-left">
-                                <div className="text-xl md:text-2xl font-bold text-[#0B8494]">3 Types</div>
-                                <div className="text-xs md:text-sm text-gray-500 dark:text-gray-400">Of Memory Assessed</div>
+                                <div className="text-xl md:text-2xl font-bold text-[#0B8494]">Smriti AI</div>
+                                <div className="text-xs md:text-sm text-gray-500 dark:text-gray-400">Gemini-Powered Care Companion</div>
                             </div>
                             <div className="text-center lg:text-left">
                                 <div className="text-xl md:text-2xl font-bold text-[#0B8494]">3 Stages</div>
@@ -63,7 +63,7 @@ export default function HeroSection() {
                         <div className="relative max-w-xs md:max-w-sm">
                             <div className="relative">
                                 <Image
-                                    src="/screenshots/patientHome.png"
+                                    src="https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048148/r9h7ej4mm8gt3bedt2dq.png"
                                     alt="Recap App - Patient Home Screen"
                                     width={350}
                                     height={600}

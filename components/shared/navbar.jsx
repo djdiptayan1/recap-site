@@ -37,6 +37,9 @@ export default function Navbar() {
                         <Link href="/support" className="text-gray-600 dark:text-gray-300 hover:text-[#0B8494] px-3 py-2 text-sm font-medium transition-colors">
                             Support
                         </Link>
+                        <Link href="/screenshots" className="text-gray-600 dark:text-gray-300 hover:text-[#0B8494] px-3 py-2 text-sm font-medium transition-colors">
+                            Screenshots
+                        </Link>
                         <Link href="/privacyPolicy" className="text-gray-600 dark:text-gray-300 hover:text-[#0B8494] px-3 py-2 text-sm font-medium transition-colors">
                             Privacy Policy
                         </Link>
@@ -102,6 +105,9 @@ export default function Navbar() {
                         </Link>
                         <Link href="/support" className="block text-gray-600 dark:text-gray-300 hover:text-[#0B8494] px-3 py-2 text-base font-medium" onClick={() => setIsMenuOpen(false)}>
                             Support
+                        </Link>
+                        <Link href="/screenshots" className="block text-gray-600 dark:text-gray-300 hover:text-[#0B8494] px-3 py-2 text-base font-medium" onClick={() => setIsMenuOpen(false)}>
+                            Screenshots
                         </Link>
                         <Link href="/privacyPolicy" className="block text-gray-600 dark:text-gray-300 hover:text-[#0B8494] px-3 py-2 text-base font-medium" onClick={() => setIsMenuOpen(false)}>
                             Privacy Policy

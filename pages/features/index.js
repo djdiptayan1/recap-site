@@ -3,94 +3,136 @@ import { config } from "../../config"
 
 const features = [
     {
-        title: "Daily Memory Questions",
-        description: "Personalized questions created by family members that target different memory types. Each question can include photos to enhance visual recall.",
+        title: "Smriti AI Care Companion",
+        description: "An AI-powered care companion built on Google Gemini that provides real-time support, reminiscence therapy, and context-aware conversations. Smriti understands each patient\u2019s name, family members, Alzheimer\u2019s stage, activities, and reminders.",
         details: [
-            "Family members remotely add questions about shared memories and life events",
-            "Questions are categorized by memory type: distant, immediate, or remote",
-            "Photo attachments help trigger visual memory associations",
-            "Category picker allows targeting specific memory areas",
-            "Response tracking feeds into memory assessment reports"
+            "Powered by Google Gemini (gemini-3-flash-preview) for natural, empathetic conversations",
+            "Memory-lane reminiscence mode helps patients recall and cherish past experiences",
+            "Patient context-aware: references family members, stage, activities, and reminders",
+            "Structured responses include care strategies, sources, medical disclaimers, and follow-up prompts",
+            "Real-time streaming chat (SSE) for a live, responsive experience",
+            "Conversation history support for continuity across sessions"
         ],
-        imageUrl: "/screenshots/addQuestion.png",
+        imageUrl: "https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048146/jl1oweylvh6wr0yo13bs.png",
+        alt: "Smriti AI Care Companion chat interface",
+    },
+    {
+        title: "Daily Memory Questions",
+        description: "Personalized questions created by family members that target different memory types. Each question can include photos, hints, and answer options to enhance recall.",
+        details: [
+            "7 questions per day: 4 immediate, 2 recent, 1 remote memory",
+            "Family members remotely add questions about shared memories and life events",
+            "Photo attachments help trigger visual memory associations",
+            "Multiple-choice format with configurable answer options and correct answers",
+            "Patient and family answer tracking with role distinction",
+            "Ask interval and time frame settings for question scheduling"
+        ],
+        imageUrl: "https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048144/ifcqlc4g1lrbc0kpimbq.png",
         alt: "Daily questions interface showing family-created memory prompts",
     },
     {
         title: "Cognitive Games",
-        description: "Two scientifically-designed games that exercise spatial memory, pattern recognition, and short-term recall through engaging gameplay.",
+        description: "Three scientifically-designed games that exercise spatial memory, pattern recognition, and short-term recall through engaging gameplay with performance tracking.",
         details: [
             "Geo Sorter: Sort geographic items to boost spatial memory and recognition",
             "Match Mania: Pattern matching game to increase memory agility",
-            "Games designed to exercise working memory and attention",
+            "Card Game: Recognition-based card matching for visual memory training",
             "Session tracking records performance for progress reports",
-            "Difficulty adapts to maintain cognitive challenge"
+            "Games target working memory, attention, and cognitive flexibility"
         ],
-        imageUrl: "/screenshots/games.png",
-        alt: "Memory games selection screen showing Geo Sorter and Match Mania",
+        imageUrl: "https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048144/uv8wmtmbgdp2qe1ag7yi.png",
+        alt: "Memory games selection screen showing cognitive games",
     },
     {
-        title: "Memory Type Assessment",
-        description: "Rapid memory quizzes that evaluate cognitive function across three clinically-recognized memory types, providing scored assessments and recommendations.",
+        title: "Journal & Memory Entries",
+        description: "A rich journaling system where patients can capture thoughts, memories, and emotions through text, voice recordings, and photos \u2014 building a personal memory archive.",
         details: [
-            "Tests distant memory (long-term): memories from years ago",
-            "Tests immediate memory (short-term): minutes to hours",
-            "Tests remote memory (recent): days to weeks",
-            "Percentage scores calculated per memory type",
-            "Personalized recommendations based on weak areas (e.g., journaling for recent memory, photo review for distant memory)"
+            "Create entries with text content and optional voice recordings (audio upload to Cloudinary)",
+            "Attach multiple photos with captions to each entry",
+            "Mood tagging: happy, sad, neutral, anxious, calm, grateful",
+            "Two entry types: journal (text/voice focused) and memory (photo focused)",
+            "Tag people, places, and events for rich context",
+            "Pagination support for browsing past entries"
         ],
-        imageUrl: "/screenshots/report.png",
+        imageUrl: "https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048148/sid4k7p89esbm7vwncab.png",
+        alt: "Journal and memory entries interface with photos and mood tags",
+    },
+    {
+        title: "Smart Reminders",
+        description: "A comprehensive reminder system to help patients maintain daily routines \u2014 from medication schedules to appointments, exercise, meals, and hydration.",
+        details: [
+            "Categories: Medicine, Daily Chore, Appointment, Exercise, Meal, Hydration, Other",
+            "Flexible frequencies: once, hourly, daily, weekdays, weekends, weekly, biweekly, monthly, yearly",
+            "Add optional notes for additional context",
+            "Edit and delete reminders as routines change",
+            "Helps maintain structured daily routines critical for Alzheimer\u2019s patients"
+        ],
+        imageUrl: "https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048141/l0u2uo3moubir9dcqlma.png",
+        alt: "Smart reminders interface showing medication and activity scheduling",
+    },
+    {
+        title: "Dashboard Analytics",
+        description: "Comprehensive analytics with daily, weekly, and monthly question accuracy statistics, per-category breakdowns, and cognitive decline trend alerts.",
+        details: [
+            "Daily stats: total questions, answered count, correct count, accuracy percentage",
+            "Per-category breakdowns for immediate, recent, and remote memory",
+            "Weekly and monthly trend visualization",
+            "Cognitive decline trend alerts to flag concerning patterns",
+            "Analytics caching for fast dashboard loading"
+        ],
+        imageUrl: "https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048142/nmexrxae9dg4k8ccrlb6.png",
+        alt: "Dashboard analytics showing memory performance trends",
+    },
+    {
+        title: "Memory Assessment & Reports",
+        description: "A 15-point cognitive quiz evaluating performance across all three memory types, with historical reports to track changes and inform clinical decisions.",
+        details: [
+            "15-point scoring system across immediate, recent, and remote memory",
+            "Historical report tracking with date-stamped results",
+            "Share reports with healthcare providers for clinical assessments",
+            "Trend data shows improvement or decline over time",
+            "Personalized recommendations based on weak areas"
+        ],
+        imageUrl: "https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048140/vg2syphpkskizu1acwaz.png",
         alt: "Memory assessment results showing scores by memory type",
     },
     {
-        title: "Progress Reports & Analytics",
-        description: "Three specialized report views with visual charts tracking memory performance trends over time, designed to be shared with healthcare providers.",
-        details: [
-            "Immediate Report: tracks short-term memory quiz performance",
-            "Recent Report: monitors recent memory recall accuracy",
-            "Remote Report: analyzes long-term memory retention trends",
-            "Trend visualization with charts and performance over time",
-            "Export and share reports with doctors and caregivers"
-        ],
-        imageUrl: "/screenshots/report.png",
-        alt: "Progress tracking dashboard with charts and memory type analytics",
-    },
-    {
         title: "Family Member Management",
-        description: "Add and manage family member profiles with photos, relationships, and contact information. Family members get their own dedicated dashboard.",
+        description: "Add and manage family member profiles with photos, relationships, and contact information. Family members get their own dedicated dashboard with real-time insights.",
         details: [
-            "Add family members with profile photos and relationship details",
-            "Family dashboard with trend cards and daily question creation",
-            "Streaks card shows patient engagement consistency",
-            "Remote monitoring of patient activity and progress",
-            "Secure data sharing with authorized family members"
+            "Add family members with profile photos, relationship, phone, and email",
+            "Family dashboard with trend cards, daily question creation, and streaks monitoring",
+            "Upload photos, voices, and stories for shared memory building",
+            "Remote monitoring of patient activity and cognitive progress",
+            "Medication and routine coordination across family members"
         ],
-        imageUrl: "/screenshots/patientHome.png",
+        imageUrl: "https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048141/ywycbazxwenr5jtxfbr4.png",
         alt: "Family connection interface showing member management",
     },
     {
         title: "Streaks & Daily Engagement",
-        description: "A streak system that encourages consistent daily use, backed by research showing regular cognitive exercise provides the greatest benefit for memory maintenance.",
+        description: "A streak system with calendar-style tracking that encourages consistent daily use \u2014 backed by research showing regular cognitive exercise provides the greatest benefit.",
         details: [
-            "Daily streak tracking encourages routine engagement",
-            "Calendar-style collection view shows activity history",
-            "Visual indicators for active and missed days",
-            "Streak data integrated into family member dashboard",
-            "Based on research: consistency matters more than intensity for cognitive benefit"
+            "Daily streak tracking with current streak and max streak statistics",
+            "Calendar-style collection view shows activity history month by month",
+            "Active days count and last activity date tracking",
+            "Yearly streak data for long-term engagement visualization",
+            "Automatic streak updates when patients answer daily questions"
         ],
-        imageUrl: "/screenshots/patientHome.png",
+        imageUrl: "https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048146/v9dxlusltvxy4rjnuuoo.png",
         alt: "Streaks interface showing daily engagement calendar",
     },
     {
-        title: "Educational Articles",
-        description: "Curated articles about Alzheimer's disease, memory care techniques, and caregiver support, accessible directly within the app.",
+        title: "Educational Articles & Citations",
+        description: "Curated articles about Alzheimer\u2019s disease, memory care techniques, and caregiver support \u2014 backed by scientific citations from reputable research journals.",
         details: [
-            "Articles sourced from reputable Alzheimer's research organizations",
+            "Articles sourced from reputable Alzheimer\u2019s research organizations",
+            "Scientific citation database with DOI links and journal references",
             "Covers topics from disease stages to caregiving strategies",
             "In-app reading experience with clean, accessible formatting",
-            "Prefetched content for smooth offline access",
-            "Let's Read card on patient home screen for easy access"
+            "Multimedia support with images and external links"
         ],
-        imageUrl: "/screenshots/articles.png",
+        imageUrl: "https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048141/uqr02nylkp6ugcxrx27d.png",
         alt: "Educational articles library within the Recap app",
     },
 ];
