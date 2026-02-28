@@ -1,81 +1,65 @@
-import Image from 'next/image';
 import { config } from "../../config"
 
 export default function AboutSection() {
     return (
-        <section className="relative overflow-hidden py-24 lg:py-32 bg-gradient-to-br from-[#F0F9FF] via-white to-[#F4F6FF]">
-            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
-                    <div className="space-y-8">
-                        <div className="space-y-4">
-                            <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight" style={{ color: 'var(--foreground)' }}>
-                                Why Recap
-                                <span style={{ color: 'var(--primary-color)' }}>
-                                    {" "}Matters
-                                </span>
-                            </h2>
-                            <div className="w-24 h-1 rounded-full" style={{ backgroundColor: 'var(--primary-color)' }}></div>
+        <section className="py-20 lg:py-28 bg-white dark:bg-gray-900">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                {/* Header */}
+                <div className="text-center mb-16">
+                    <h2 className="text-3xl lg:text-5xl font-bold text-gray-800 dark:text-white mb-4">
+                        Why <span className="text-[#0B8494]">Recap</span> Matters
+                    </h2>
+                    <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                        Alzheimer&apos;s disease affects over 55 million people worldwide and is the 7th leading cause of death globally. Early and consistent cognitive engagement can help slow memory decline.
+                    </p>
+                </div>
+
+                {/* Statistics Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                    {[
+                        { stat: "55M+", label: "People Living with Dementia Worldwide", source: "WHO, 2023" },
+                        { stat: "10M", label: "New Cases Diagnosed Every Year", source: "Alzheimer's Disease International" },
+                        { stat: "60-70%", label: "Of Dementia Cases Are Alzheimer's", source: "WHO" },
+                        { stat: "#7", label: "Leading Cause of Death Globally", source: "WHO, 2023" },
+                    ].map((item, i) => (
+                        <div key={i} className="text-center p-6 rounded-xl bg-[#F4F6FF] dark:bg-gray-800">
+                            <div className="text-3xl lg:text-4xl font-bold text-[#0B8494] mb-2">{item.stat}</div>
+                            <div className="text-sm text-gray-700 dark:text-gray-300 font-medium mb-1">{item.label}</div>
+                            <div className="text-xs text-gray-400">{item.source}</div>
                         </div>
+                    ))}
+                </div>
 
-                        {/* Subheading */}
-                        <h3 className="text-2xl lg:text-3xl font-semibold" style={{ color: 'var(--foreground)' }}>
-                            Making a Meaningful Difference
-                        </h3>
-
-                        {/* Description paragraphs with enhanced styling */}
-                        <div className="space-y-6 text-lg leading-relaxed" style={{ color: 'var(--secondary-text)' }}>
-                            <div className="relative pl-6 border-l-4" style={{ borderColor: 'var(--primary-light)' }}>
-                                <p>
-                                    Memory recall challenges in Alzheimer's can feel like an <strong style={{ color: 'var(--foreground)' }}>invisible barrier</strong>, quietly impacting daily life and accelerating cognitive decline.
-                                </p>
-                            </div>
-
-                            <div className="relative pl-6 border-l-4" style={{ borderColor: 'var(--primary-color)' }}>
-                                <p>
-                                    But what if we could slow that progression while empowering patients and caregivers alike? <strong style={{ color: 'var(--primary-color)' }}>We got you</strong> – Recap is here to do just that.
-                                </p>
-                            </div>
-
-                            <div className="relative pl-6 border-l-4" style={{ borderColor: 'var(--primary-light)' }}>
-                                <p>
-                                    By addressing memory recall proactively, Recap helps enhance the quality of life for <strong style={{ color: 'var(--foreground)' }}>millions worldwide</strong>, offering a lifeline of hope, connection, and engagement.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="flex flex-col sm:flex-row gap-4">
-                            <a href={config.appLink} className="group relative px-8 py-4 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 overflow-hidden" style={{ backgroundColor: 'var(--primary-color)' }}>
-                                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: 'var(--primary-color)', filter: 'brightness(0.9)' }}></div>
-                                <span className="relative flex items-center justify-center">
-                                    Try It Now
-                                    <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
+                {/* Problem & Solution */}
+                <div className="grid lg:grid-cols-2 gap-12 items-start">
+                    <div className="space-y-6">
+                        <h3 className="text-2xl font-bold text-gray-800 dark:text-white">The Challenge</h3>
+                        <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                            Alzheimer&apos;s progressively impairs memory across all types — from forgetting recent conversations to losing long-held personal memories. Caregivers often struggle to track cognitive changes, and patients can feel isolated from their families.
+                        </p>
+                        <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                            Research from the <strong>Alzheimer&apos;s Association</strong> shows that consistent cognitive stimulation — including memory exercises, social engagement, and structured daily routines — can help maintain cognitive function and improve quality of life.
+                        </p>
                     </div>
 
-                    {/* Visual Side */}
-                    <div className="relative">
-                        {/* Main image container with enhanced styling */}
-                        <div className="relative group">
-                            {/* Decorative background */}
-                            <div className="absolute inset-0 rounded-3xl transform rotate-3 group-hover:rotate-6 transition-transform duration-500" style={{ backgroundColor: 'var(--primary-color)' }}></div>
-                            <div className="absolute inset-0 rounded-3xl transform -rotate-3 group-hover:-rotate-6 transition-transform duration-500" style={{ background: 'linear-gradient(135deg, var(--gradient-start), var(--gradient-end))' }}></div>
-
-                            {/* Image container */}
-                            <div className="relative p-2 rounded-3xl shadow-2xl" style={{ backgroundColor: 'var(--card-bg)' }}>
-                                <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-                                    <Image
-                                        src="/screenshots/patientHome.png"
-                                        alt="Recap app interface showing memory assistance features"
-                                        fill
-                                        className="object-cover group-hover:scale-105 transition-transform duration-700"
-                                    />
-                                </div>
-                            </div>
-                        </div>
+                    <div className="space-y-6">
+                        <h3 className="text-2xl font-bold text-gray-800 dark:text-white">How Recap Helps</h3>
+                        <ul className="space-y-4">
+                            {[
+                                "Targets all three memory types: long-term (distant), short-term (immediate), and recent (remote) memory",
+                                "Adapts to Alzheimer's stages — Early, Middle, and Advanced — for personalized engagement",
+                                "Enables family members to remotely create daily memory questions with photos",
+                                "Tracks cognitive performance through detailed reports and trend analytics",
+                                "Encourages daily engagement through a streak system and cognitive games",
+                            ].map((point, i) => (
+                                <li key={i} className="flex items-start">
+                                    <svg className="w-5 h-5 text-[#0B8494] mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span className="text-gray-600 dark:text-gray-300">{point}</span>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                 </div>
             </div>
