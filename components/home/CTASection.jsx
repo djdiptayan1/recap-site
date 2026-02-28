@@ -4,47 +4,54 @@ import { config } from "../../config"
 
 export default function CTASection() {
     return (
-        <section className="bg-gradient-to-r from-[#B0E0E0]/50 to-[#EFB9CC]/50 dark:bg-gradient-to-r dark:from-[#0B8494]/50 dark:to-[#097383]/50">
-            <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-                <div className="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
-                    <div>
-                        <h2 className="text-3xl font-extrabold text-gray-800 dark:text-white sm:text-4xl">
-                            Ready to transform the way you approach memory care?
-                        </h2>
-                        <p className="mt-4 text-lg text-gray-700 dark:text-gray-100">
-                            Download Recap today and start fostering deeper connections with your loved ones facing Alzheimer's challenges.
-                        </p>
-                        <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                            <a
-                                href={config.appLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md bg-white text-[#0B8494] hover:bg-gray-100 transition-colors"
-                            >
-                                Download Now
-                            </a>
-                            <Link
-                                href="/support"
-                                className="inline-flex items-center justify-center px-6 py-3 border border-[#0B8494] text-base font-medium rounded-md text-[#0B8494] bg-transparent dark:text-white hover:bg-[rgba(11,132,148,0.1)] transition-colors"
-                            >
-                                Get Support
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="mt-12 lg:mt-0">
-                        <div className="pl-0 lg:pl-8">
-                            <div className="aspect-w-5 aspect-h-3 overflow-hidden rounded-lg bg-white dark:bg-gray-800 shadow-lg p-4">
-                                {/* Replace with app preview */}
-                                <div className="w-full h-full flex items-center justify-center bg-gray-100 dark:bg-gray-700 rounded">
-                                    <span className="text-gray-500 dark:text-gray-400 text-center p-12">
-                                        App Preview
-                                        <br />
-                                        (Replace with app mockup or screenshot)
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <section className="py-20 bg-white dark:bg-gray-900">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 dark:text-white mb-4">
+                    Start Supporting Memory Care Today
+                </h2>
+                <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Download Recap on the App Store and begin a structured, science-informed approach to memory care for your loved ones.
+                </p>
+
+                <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                    <a
+                        href={config.appLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center px-8 py-4 bg-[#0B8494] text-white font-semibold rounded-xl hover:bg-[#097383] transition-all duration-300 shadow-lg"
+                    >
+                        Download on the App Store
+                    </a>
+                    <Link
+                        href="/support"
+                        className="inline-flex items-center justify-center px-8 py-4 border-2 border-[#0B8494]/30 text-[#0B8494] font-semibold rounded-xl hover:border-[#0B8494] transition-all duration-300"
+                    >
+                        Get Support
+                    </Link>
+                </div>
+
+                <div className="flex justify-center gap-6">
+                    <Image
+                        src="https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048140/ufke6lkpp4oxsnjswwr8.png"
+                        alt="Recap App - Role Selection"
+                        width={180}
+                        height={320}
+                        className="rounded-xl shadow-lg object-cover"
+                    />
+                    <Image
+                        src="https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048146/jl1oweylvh6wr0yo13bs.png"
+                        alt="Recap App - Smriti AI Companion"
+                        width={180}
+                        height={320}
+                        className="rounded-xl shadow-lg object-cover hidden sm:block"
+                    />
+                    <Image
+                        src="https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048142/nmexrxae9dg4k8ccrlb6.png"
+                        alt="Recap App - Caregiver Dashboard"
+                        width={180}
+                        height={320}
+                        className="rounded-xl shadow-lg object-cover hidden md:block"
+                    />
                 </div>
             </div>
         </section>

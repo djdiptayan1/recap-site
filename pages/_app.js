@@ -1,29 +1,54 @@
 import "@/styles/globals.css";
 import Navbar from "@/components/shared/navbar";
 import Footer from "@/components/shared/footer";
-import Link from "next/link";
-import { Geist, Geist_Mono } from "next/font/google";
+import Head from "next/head";
+import { useState, useEffect, createContext } from "react";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+export const ThemeContext = createContext();
 
 export default function App({ Component, pageProps }) {
-  return (
-    <>
+  const [darkMode, setDarkMode] = useState(false);
 
+  useEffect(() => {
+    const stored = localStorage.getItem("theme");
+    if (stored === "dark") {
+      setDarkMode(true);
+      document.documentElement.classList.add("dark");
+    } else if (stored === "light") {
+      setDarkMode(false);
+      document.documentElement.classList.remove("dark");
+    } else {
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      setDarkMode(prefersDark);
+      if (prefersDark) {
+        document.documentElement.classList.add("dark");
+      }
+    }
+  }, []);
+
+  const toggleDarkMode = () => {
+    const newMode = !darkMode;
+    setDarkMode(newMode);
+    if (newMode) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  };
+
+  return (
+    <ThemeContext.Provider value={{ darkMode, toggleDarkMode }}>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Recap - Every Memory Matters</title>
+      </Head>
       <Navbar />
-      <div className="pt-10">
+      <div className="pt-16">
         <Component {...pageProps} />
       </div>
-
       <Footer />
-    </>
+    </ThemeContext.Provider>
   );
 }
