@@ -6,7 +6,7 @@ export default function ScienceSection() {
             color: "#0B8494",
             description: "Memories from years ago — childhood events, life milestones, and deeply encoded experiences.",
             science: "Long-term memory relies on the hippocampus for encoding and the neocortex for storage. In Alzheimer's, hippocampal damage occurs early, but distant memories encoded long ago may persist longer.",
-            appApproach: "Recap uses personalized daily questions about past life events, family photos, and the Smriti AI companion\u2019s reminiscence mode to reinforce long-term recall pathways.",
+            appApproach: "Recap uses personalized daily questions about past life events, family photos, and the Smriti AI companion\u2019s reminiscence mode with automatic Apple/custom provider routing to reinforce long-term recall pathways.",
         },
         {
             type: "Short-term Memory",
@@ -22,7 +22,7 @@ export default function ScienceSection() {
             color: "#81B29A",
             description: "Memories from days to weeks ago — what someone did last weekend or a recent doctor visit.",
             science: "Recent memory requires consolidation from short-term to long-term storage, a process that sleep and repetition facilitate. This consolidation is disrupted in Alzheimer's.",
-            appApproach: "Daily questions, streak-based engagement, and journal entries encourage repeated recall of recent events. Smart reminders provide structured daily anchors that support consolidation.",
+            appApproach: "Daily questions, streak-based engagement, and mood journal entries encourage repeated recall of recent events. Smart reminders provide structured daily anchors that support consolidation.",
         },
     ];
 

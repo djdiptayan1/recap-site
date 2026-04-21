@@ -30,9 +30,11 @@ export default function Guidelines() {
         },
         {
             title: "Smriti AI Companion",
-            description: "Chat with your AI care companion for support and reminiscence",
+            description: "Chat with dual-provider AI for support and reminiscence",
             steps: [
                 "Open Smriti from the home screen to start a conversation",
+                "On supported iPhone 15 Pro+ devices, Smriti uses Apple Foundation Models when enabled and ready",
+                "If Apple Intelligence is unavailable, Recap automatically continues with our custom AI service",
                 "Ask questions about memory care, daily activities, or just chat for companionship",
                 "Use \u2018Memory Lane\u2019 mode for guided reminiscence therapy sessions",
                 "Smriti provides personalized responses based on your context",
@@ -42,10 +44,10 @@ export default function Guidelines() {
             alt: "Smriti AI Care Companion chat screen"
         },
         {
-            title: "Journal & Memories",
-            description: "Capture thoughts, memories, and emotions",
+            title: "Mood Journaling & Memories",
+            description: "Capture moods, thoughts, and memories",
             steps: [
-                "Create a new journal entry from the home screen",
+                "Create a new mood journal entry from the home screen",
                 "Write text, record voice entries, or attach photos",
                 "Tag your mood to track emotional well-being over time",
                 "Tag people, places, and events for meaningful context",

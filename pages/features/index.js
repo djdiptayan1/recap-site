@@ -4,13 +4,13 @@ import { config } from "../../config"
 const features = [
     {
         title: "Smriti AI Care Companion",
-        description: "An intelligent AI care companion that provides real-time conversational support, reminiscence therapy, and personalized interactions tailored to each patient.",
+        description: "A dual-provider AI companion that uses Apple Foundation Models on supported iPhone 15 Pro+ devices and Recap's custom AI service for all other cases.",
         details: [
-            "Natural, empathetic conversations for emotional support and companionship",
-            "Reminiscence therapy mode helps patients recall and cherish past experiences",
-            "Personalized responses based on patient context and family connections",
-            "Thoughtful follow-up prompts to encourage continued engagement",
-            "Seamless, responsive chat experience"
+            "Apple Foundation Models path is used automatically when device support, enablement, and readiness are available",
+            "Automatic fallback to Recap's custom AI service keeps chat continuous when Apple Intelligence is unavailable or unsupported",
+            "State-aware AI availability messaging (active, enable in settings, preparing, or unsupported)",
+            "Mode-aware responses for caregiver guidance and reminiscence conversations",
+            "Personalized context-aware support with warm follow-up prompts"
         ],
         imageUrl: "https://res.cloudinary.com/dbtijt1zq/image/upload/v1772048146/jl1oweylvh6wr0yo13bs.png",
         alt: "Smriti AI Care Companion chat interface",
@@ -40,11 +40,11 @@ const features = [
         alt: "Memory games selection screen showing cognitive games",
     },
     {
-        title: "Journal & Memory Entries",
-        description: "A rich journaling system where patients can capture thoughts, memories, and emotions through text, voice, and photos \u2014 building a personal memory archive.",
+        title: "Mood Journaling & Memory Entries",
+        description: "A mood journaling system where patients can capture emotions and memories through text, voice, and photos while building a personal memory archive.",
         details: [
-            "Create entries with text, voice recordings, and photos",
-            "Mood tagging to track emotional well-being over time",
+            "Create mood journal entries with text, voice recordings, and photos",
+            "Track emotional patterns over time with mood signals",
             "Tag people, places, and events for meaningful context",
             "Browse past entries to revisit cherished memories"
         ],
@@ -143,7 +143,7 @@ export default function Features() {
                     </h1>
 
                     <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                        Every feature in Recap is informed by cognitive science research and designed around the actual needs of Alzheimer&apos;s patients and their caregiving families.
+                        Every feature in Recap is informed by cognitive science research and designed around the actual needs of Alzheimer&apos;s patients and their caregiving families, now with dual-provider AI and mood journaling.
                     </p>
                 </div>
 
