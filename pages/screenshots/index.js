@@ -40,7 +40,7 @@ export default function Screenshots() {
                 <div className="mb-20">
                     <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2 text-center">Patient App</h2>
                     <p className="text-gray-600 dark:text-gray-300 text-center mb-8">
-                        Daily questions, cognitive games, Smriti AI companion, and personalized memory care.
+                        Daily questions, cognitive games, dual-provider Smriti AI, mood journaling, and personalized memory care.
                     </p>
                     <div className="flex flex-wrap justify-center gap-6">
                         {patientScreenshots.map((screenshot, index) => (
@@ -62,7 +62,7 @@ export default function Screenshots() {
                 <div>
                     <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2 text-center">Caregiver Portal</h2>
                     <p className="text-gray-600 dark:text-gray-300 text-center mb-8">
-                        Dashboard analytics, family management, reminders, journal entries, and progress tracking.
+                        Dashboard analytics, family management, reminders, mood journal entries, and progress tracking.
                     </p>
                     <div className="flex flex-wrap justify-center gap-6">
                         {caregiverScreenshots.map((screenshot, index) => (

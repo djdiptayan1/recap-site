@@ -119,9 +119,9 @@ export default function PrivacyPolicy() {
 
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">3. AI Interaction Data</h3>
                     <ul className="list-disc pl-6 text-gray-600 dark:text-gray-300 mb-4">
-                        <li className="mb-2">Smriti AI Conversations: Queries and conversation history used to provide AI-powered responses</li>
+                        <li className="mb-2">Smriti AI Conversations: Queries and conversation history used to provide AI-powered responses through Apple Foundation Models (when available) or Recap&apos;s custom AI service</li>
                         <li className="mb-2">Patient Context: Relevant profile information shared with the AI to enable personalized support</li>
-                        <li className="mb-2">Note: Conversation data is processed in real-time and not stored by the AI provider for training purposes</li>
+                        <li className="mb-2">Note: Conversation data is processed in real-time with provider-aware routing and is not used to train third-party AI models</li>
                     </ul>
 
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">4. Usage Data</h3>
@@ -183,7 +183,7 @@ export default function PrivacyPolicy() {
                         We use the following third-party SDKs:
                     </p>
                     <ul className="list-disc pl-6 text-gray-600 dark:text-gray-300 mb-4">
-                        <li className="mb-2">AI Services: Powers the Smriti AI Care Companion for conversational support and reminiscence therapy</li>
+                        <li className="mb-2">AI Services: Powers Smriti with Apple Foundation Models on supported devices and Recap&apos;s custom AI service fallback</li>
                         <li className="mb-2">Authentication & Storage: Secure authentication, database, and data storage services</li>
                         <li className="mb-2">Media Storage: Secure image and audio storage for profile photos, journal entries, and memory content</li>
                         <li className="mb-2">Analytics: To monitor app performance and user experience</li>
