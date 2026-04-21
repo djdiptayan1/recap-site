@@ -47,8 +47,8 @@ export default function AboutSection() {
                         <ul className="space-y-4">
                             {[
                                 "Targets all three memory types: long-term (distant), short-term (immediate), and recent (remote) memory",
-                                "Smriti AI Care Companion provides reminiscence therapy and personalized support",
-                                "Journal & Memory entries with photos, voice recordings, and mood tagging",
+                                "Smriti AI routes to Apple Foundation Models on supported iPhone 15 Pro+ devices and uses Recap's custom AI service otherwise",
+                                "Mood journaling & memory entries with text, photos, and voice recordings",
                                 "Smart reminders for medication, appointments, and daily routines",
                                 "Enables family members to remotely create daily memory questions with photos",
                                 "Dashboard analytics to track cognitive performance over time",

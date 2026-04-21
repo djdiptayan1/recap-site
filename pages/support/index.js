@@ -11,7 +11,7 @@ export default function Support() {
         {
             id: 1,
             question: "What is Smriti AI and how does it help?",
-            answer: "Smriti is Recap\u2019s AI Care Companion. It provides real-time conversational support, reminiscence therapy through a \u2018Memory Lane\u2019 mode, and personalized responses that understand the patient\u2019s context. It offers care strategies, follow-up prompts, and supportive notes in every conversation."
+            answer: "Smriti is Recap\u2019s AI Care Companion with dual-provider routing. On supported iPhone 15 Pro+ devices, it uses Apple Foundation Models when Apple Intelligence is enabled and ready. In all other cases, it automatically uses Recap\u2019s custom AI service so conversations continue without interruption."
         },
         {
             id: 2,
@@ -30,8 +30,8 @@ export default function Support() {
         },
         {
             id: 5,
-            question: "How does the Journal & Memories feature work?",
-            answer: "The Journal feature lets patients create entries with text, voice recordings, and photos. You can tag your mood, tag people, places, and events, and browse past entries to revisit your personal memory archive."
+            question: "How does the Mood Journaling & Memories feature work?",
+            answer: "Mood Journaling lets patients create entries with text, voice recordings, and photos while tracking emotional trends over time. You can tag mood, people, places, and events, and revisit past entries as part of your personal memory archive."
         },
         {
             id: 6,

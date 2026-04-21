@@ -1,5 +1,5 @@
 const APP_NAME = "Recap - Every Memory Matters";
-const APP_DESCRIPTION = "An innovative memory care app designed for Alzheimer's patients and their caregivers, bridging the gap between family members with compassion and care.";
+const APP_DESCRIPTION = "A dementia-care platform with dual-provider AI (Apple Foundation Models + Recap custom AI), mood journaling, cognitive support, and family collaboration.";
 const APP_LINK = "https://apps.apple.com/in/app/recap-every-memory-matters/id6743312643";
 
 export const config = {
